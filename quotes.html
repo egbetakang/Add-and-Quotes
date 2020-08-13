@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quotes</title>
+	<link rel="stylesheet" type="text/css" href="quotes.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="css1/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css1/bootstrap.css"> 
+</head>
+<body>
+	<!--  <div class="container-fluid border">
+		 	
+		<div class="frame">
+			<div class="floa">
+			 	 <div class="space" id="quote" style="width:400px;height:100px; ">
+			 	 <div style="width: 200px; height: 150px;" id="author"></div>
+			     </div>
+			    <div style="width:px; height:15px; border:1px; float:right;" id="author"></div>
+			   <div class="fl">
+
+			 		<button type="btn btn-primary" onclick="quote()">Click</button><br>
+
+			   </div>
+			</div>
+		</div>
+	 </div> -->
+
+	 <div class="jumbotron jumbotron-fluid  text-center " style="background:purple;color: white; fo ">
+	 	<h2> Click the button below to view our quotes</h2>
+	 </div>
+	 <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+	 	<button type="submit" class=" btn btn-primary" onclick="quote()" >Click</button><br>
+	 	<div class="quote space" id="quote" style="width:70%;height:200px; ">"</div>
+		<div><h3>Quote by </h3></p><div style="width:justify; height: justify; float: right;" id="author"></div></div>
+			     
+	 </div>
+
+<script>
+	var quotes = [ {
+ 		quote:"Tekstedia is to develope a strong tech system that cu industrial, commercial and personal standards.TeksTedia is a Cameroon based tech company. It ",
+ 		author:"egbe"
+ 	},
+ 	 {
+ 		quote:" qto develope a strong tech system that cuts across all aspects of technology in order to solve related issues of our era, thereby upgrading industrial, codards.TeksTedia is a Cameroon based tech company. It ",
+ 		author:"takang"
+ 	},
+ 	 {
+ 		quote:"ltedia is to develope a strong tech system that cuts across all aspects of technology in order to solve related issues of our era, thereby upgradinrsonal standards.TeksTedia is a Cameroon based tech company. It ",
+ 		author:"tabe"
+ 	},
+ 	{
+ 		quote:"mtedia is to develope a strong tech system that cuts across all aspects of technology in order to solve related issues of our endards.TeksTedia is a Cameroon based tech company. It ",
+ 		author:"gabe"
+ 	},
+ 	{
+ 		quote:"atedia is to develope a strong tech system that cuts across all aspects of technology in order to solve related issues of our era, thereby upgrading industrial, commercial and personal standards.TeksTedia is a Cameroon based tech company. It ",
+ 		author:"kabe"
+ 	},
+ 	{
+ 		quote:"wtedia is to develope a strong tech system that cuts across all aspects of technology in order to solve related issues of our era, thereby upgrading intandards.TeksTedia is a Cameroon based tech company. It ",
+ 		author:"wabe"
+ 	}]
+	function quote(){
+ 		var random = Math.floor((Math.random()*5)+1)
+ 		document.querySelector("#quote").innerHTML=quotes[random].quote
+ 		document.querySelector("#author").innerHTML=quotes[random].author
+ 		//alert(random)
+ 	}
+ 	alert("Welcome to Tekstedia quotes page")
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="css1/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css1/bootstrap.css"> 
+	<style>
+		.space{
+			height: justify;
+			width: 40%;
+			border: 1px solid grey;
+			padding: 3px;
+			margin-top: 5%;
+			margin-left: 20%;
+			color: white;
+		}
+		.form{
+			margin: 13%
+		}
+		body{
+			background-color: #003110;
+			/*background-image: url("06.jpg");*/
+		}
+		h1{
+			color: white;
+			text-shadow: 12px;
+			text-align: center;
+		}
+		h3{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>This is an add function</h1>
+
+	<div class="form">
+	 <input type="text" id="input_field">
+	 <button class="btn btn-primary " onclick="add()">Click</button><br>	
+	  <h3><span style="color:#603810;">NOTE: </span>Everything you type will display below</h3>
+	 <div class="space" id="list"></div>
+	</div>
+
+ <script >
+ 	
+ 	var content = []
+ 	function add(){
+ 	var msg =document.querySelector("#input_field").value + '<br>'
+ 	content.push(msg)	
+ 	document.querySelector("#list").innerHTML = content
+ 	
+
+
+ 	}
+ </script>
+</body>
+</html>
